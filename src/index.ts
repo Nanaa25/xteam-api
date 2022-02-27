@@ -3,7 +3,7 @@ import crypto from 'crypto'
 import { URL, URLSearchParams } from 'url'
 
 const genAPI = (apikey: string) => got.extend({
-    prefixUrl: 'https://api.xteam.xyz',
+    prefixUrl: 'https://api.x.xyz',
     handlers: [
         (options, next) => {
             if (options.searchParams === undefined) options.searchParams = new URLSearchParams
